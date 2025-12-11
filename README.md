@@ -91,6 +91,52 @@ cmake --build .
 ./TodoApp  # or TodoApp.exe on Windows
 ```
 
+## 🚀 Quick Start — Run from Terminal
+
+### Windows (recommended)
+
+```powershell
+# Clone and enter repo
+git clone https://github.com/AbdulRaffayQureshi/Todo_C-.git
+cd Todo_C-
+
+# One-click build & run (recommended)
+.\build_complete.bat
+```
+
+### Linux / macOS
+
+```bash
+# Clone and enter repo
+git clone https://github.com/AbdulRaffayQureshi/Todo_C-.git
+cd Todo_C-
+
+# Quick compile and run
+g++ -std=c++17 -o TodoApp main.cpp src/models/*.cpp src/controllers/*.cpp src/views/*.cpp src/utils/*.cpp src/algorithms/*.cpp -I. && ./TodoApp
+```
+
+### Cross-platform (CMake — preferred for larger builds)
+
+```bash
+git clone https://github.com/AbdulRaffayQureshi/Todo_C-.git
+cd Todo_C-
+mkdir build && cd build
+cmake ..
+cmake --build .
+# Run:
+./TodoApp      # Linux/macOS
+TodoApp.exe    # Windows
+```
+
+### Minimal quick commands (single-line)
+
+- Windows (auto):
+  powershell: `.\build_complete.bat`
+- Windows (manual):
+  `g++ -std=c++17 -o TodoApp.exe main.cpp src/**/*.cpp -I. && TodoApp.exe`
+- Linux/macOS:
+  `g++ -std=c++17 -o TodoApp main.cpp src/**/*.cpp -I. && ./TodoApp`
+
 ## 🔧 Build Configuration
 
 **`CMakeLists.txt`** - Professional build setup:
