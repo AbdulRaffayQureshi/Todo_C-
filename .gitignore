@@ -1,0 +1,146 @@
+# ============================================
+# BUILD OUTPUTS (from build_complete.bat)
+# ============================================
+
+# Executable
+TodoApp.exe
+
+# Object files
+*.o
+*.obj
+DisplayManager.o
+FileHandler.o
+main.o
+PriorityQueue.o
+SortSearch.o
+TestDataGenerator.o
+TodoController.o
+Todoltern.o
+
+# ============================================
+# CMAKE BUILD DIRECTORY
+# ============================================
+
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+*.cmake
+CTestTestfile.cmake
+
+# ============================================
+# DATA FILES (your todos.dat)
+# ============================================
+
+todos.dat
+*.dat
+
+# Data directories (created by your app)
+backup/
+data/
+exports/
+
+# ============================================
+# IDE/EDITOR FILES
+# ============================================
+
+.vscode/
+*.code-workspace
+
+.idea/
+*.iml
+
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# TEMPORARY & LOG FILES
+# ============================================
+
+*.tmp
+*.temp
+*.log
+*.tlog
+
+# ============================================
+# DEBUG & PROFILING FILES
+# ============================================
+
+*.pdb
+*.idb
+*.ilk
+*.map
+*.exp
+
+# ============================================
+# PRE-COMPILED HEADERS
+# ============================================
+
+*.gch
+*.pch
+
+# ============================================
+# TEST OUTPUTS
+# ============================================
+
+test_*.dat
+test_*.csv
+test_*.json
+
+# ============================================
+# ARCHIVES & BACKUPS
+# ============================================
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*_backup.*
+*_old.*
+
+# ============================================
+# VERSION CONTROL
+# ============================================
+
+.git/
+
+# ============================================
+# PROJECT SPECIFIC (based on your structure)
+# ============================================
+
+# Keep your batch file but ignore its outputs
+# !build_complete.bat
+
+# Generated exports
+todo_export_*.csv
+todo_export_*.json
+
+# Generated backups
+backup_*.dat
+todo_backup_*.dat
+
+# Temporary compile files
+*.tds
+*.manifest
+*.cache
+*.layout
