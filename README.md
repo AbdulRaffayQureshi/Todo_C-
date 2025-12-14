@@ -52,6 +52,40 @@ TodoApp/
 │       └── TestDataGenerator.h/cpp # Performance testing
 ```
 
+## 🧭 Architecture Flow (Mermaid)
+
+Below is a Mermaid diagram showing the MVC flow between Views, Controllers, Models and Utils.
+
+```mermaid
+flowchart LR
+    subgraph Views
+        V1[DisplayManager]
+    end
+
+    subgraph Controllers
+        C1[TodoController]
+    end
+
+    subgraph Models
+        M1[TodoItem<br>Data Structure]
+        M2[PriorityQueue<br>Binary Heap DS]
+    end
+
+    subgraph Utils
+        U1[ColorManager]
+        U2[FileHandler]
+        U3[SortSearch<br>Algorithms]
+    end
+
+    V1 -- "1. User Input<br>(e.g., 'Add Todo')" --> C1
+    C1 -- "2. Process Logic<br>(Validate, Update Models)" --> Models
+    Models -- "3. Updated Data" --> C1
+    C1 -- "4. Return Results" --> V1
+    C1 -- "Uses" --> Utils
+    V1 -- "Uses for Display" --> U1
+
+```
+
 ## 🚀 Getting Started
 
 ### Prerequisites
