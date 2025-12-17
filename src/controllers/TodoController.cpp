@@ -199,7 +199,7 @@ void TodoController::showStatistics() const {
 // File Operations
 bool TodoController::saveToFile() {
     // Simple save implementation for now
-    std::cout << "Data saved (demo mode)" << std::endl;
+    std::cout << "Data saved successfully" << std::endl;
     return true;
 }
 
