@@ -6,11 +6,11 @@
 
 // Initialize with demo data
 std::vector<TodoItem> TodoController::todosStorage = {
-    TodoItem(1, "Complete Project Report", "Finish DSA project with algorithms", "2024-12-15", Priority::HIGH),
-    TodoItem(2, "Buy Groceries", "Milk, Eggs, Bread, Fruits", "2024-12-05", Priority::MEDIUM),
-    TodoItem(3, "Doctor Appointment", "Annual health checkup", "2024-12-10", Priority::HIGH),
+    TodoItem(1, "Complete Project Report", "Finish DSA project with algorithms", "2025-02-15", Priority::HIGH),
+    TodoItem(2, "Buy Groceries", "Milk, Eggs, Bread, Fruits", "2023-05-05", Priority::MEDIUM),
+    TodoItem(3, "Doctor Appointment", "Annual health checkup", "2025-10-10", Priority::HIGH),
     TodoItem(4, "Read Clean Code Book", "Finish reading Clean Code", "2024-12-31", Priority::LOW),
-    TodoItem(5, "Team Meeting", "Weekly sync with team", "2024-12-07", Priority::URGENT)
+    TodoItem(5, "Team Meeting", "Weekly sync with team", "2025-06-20", Priority::URGENT)
 };
 
 TodoController::TodoController() : nextId(6) {
